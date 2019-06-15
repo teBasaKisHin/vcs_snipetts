@@ -12,4 +12,14 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+
+	"make_haribote_function": {
+		"prefix": "hariFunc",
+		"body": [
+			"void HariMain(void) {",
+			"",
+			"}"
+		],
+		"description": "ハリボテOSの関数を作成するスニペット"
+	} 
 }

@@ -18,10 +18,25 @@
 		"prefix": "cvi",
 		"body":[
 			"vector<int> $1($2);",
-			"REP(i, $2) cin >> $1[i];",
+			"FOR(i, $2) cin >> $1[i];",
 			"$3"
 		],
 		"description": "vector<int>の受取"
-	}
+	},
 
+	"sort vector array smaller":{
+		"prefix": "vecsortsmall",
+		"body": [
+			"sort($1.end(), $1.end());"
+		],
+		"description": "vector配列を昇順ソートする"
+	},
+
+	"sort vector array bigger":{
+		"prefix": "vecsortbig",
+		"body": [
+			"sort($1.end(), $1.end(), greater<$2>());"
+		],
+		"description": "vector配列を降順ソートする"
+	},
 }
